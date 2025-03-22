@@ -1,6 +1,5 @@
 import { NumberCounter } from "aspect-ui";
 import { Typography } from "aspect-ui/Typography";
-import { Inter, Raleway } from "next/font/google";
 import Image from "next/image";
 import Button from "../Button";
 import Counter from "../Counter";
@@ -25,14 +24,10 @@ const TopSection = () => {
           </Typography>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
-          <Button
-            className='bg-[#FF693B] px-4.5 py-3.5 inline-flex min-w-[238px] min-h-[50px] justify-center rounded-sm shadow-[0px_1px_4px_rgba(25,33,61,0.08)] ${inter.className} font-semibold text-[16px] leading-[20px] tracking-[0] text-white uppercase'
-          >
+          <Button className="bg-[#FF693B] px-4.5 py-3.5 inline-flex min-w-[238px] min-h-[50px] justify-center rounded-sm shadow-[0px_1px_4px_rgba(25,33,61,0.08)] ${inter.className} font-semibold text-[16px] leading-[20px] tracking-[0] text-white uppercase">
             See Pricing
           </Button>
-          <Button
-            className='border border-white px-4.5 py-3.5 inline-flex min-w-[238px] min-h-[50px] justify-center rounded-sm shadow-[0px_1px_4px_rgba(25,33,61,0.08)] ${inter.className} font-semibold text-[16px] leading-[20px] tracking-[0] text-white uppercase'
-          >
+          <Button className="border border-white px-4.5 py-3.5 inline-flex min-w-[238px] min-h-[50px] justify-center rounded-sm shadow-[0px_1px_4px_rgba(25,33,61,0.08)] ${inter.className} font-semibold text-[16px] leading-[20px] tracking-[0] text-white uppercase">
             Book an appointment
           </Button>
         </div>
