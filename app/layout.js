@@ -1,17 +1,7 @@
 import { Raleway, Inter } from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-raleway",
-});
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
-});
 
 export const metadata = {
   title: "Create Next App",
