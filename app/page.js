@@ -1,5 +1,6 @@
 "use client";
 import Client from "@/components/Client";
+import DigitalService from "@/components/DigitalService";
 
 import Hero from "@/components/Hero";
 import { Roboto } from "next/font/google";
@@ -15,6 +16,7 @@ export default function Home() {
 		<div className="">
 			<div className="h-screen">
 				<Hero />
+				<DigitalService />
 
 
 

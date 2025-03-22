@@ -1,29 +1,29 @@
 export const NAV_LIST = [
     {
-        id: "#feature",
-        label: "Features",
+        id: "#home",
+        label: "Home",
     },
     {
-        id: "pricing",
+        id: "service",
 
-        label: "Pricing",
+        label: "Service",
 
     },
     {
-        id: "#solutions",
-        label: "Solutions",
+        id: "#combo sale",
+        label: "Combosale",
     },
     {
-        id: "#resources",
-        label: "Resources",
+        id: "#portfolio",
+        label: "Portfolio",
     },
     {
-        id: "#find-professionals",
-        label: "Find Professionals",
-        hasDropDown: false,
+        id: "#about-us",
+        label: "about-us",
+
     },
     {
-        id: "#help",
-        label: "Help",
+        id: "#blog",
+        label: "Blog",
     },
 ]

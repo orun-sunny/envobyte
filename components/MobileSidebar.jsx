@@ -5,9 +5,9 @@ const MobileSidebar = ({ mobileSidebarOpen, navList, ActionButtons }) => {
         mobileSidebarOpen
           ? "translate-x-0 opacity-100 z-20"
           : "-translate-x-full opacity-0 z-[-1]"
-      } lg:hidden bg-gray-50 shadow px-4 pb-4 text-center fixed z-50 top-14 right-0 w-full transition-all duration-300`}
+      } lg:hidden bg-[#021452]/95 shadow px-4 pb-4 text-center fixed z-50 top-14 right-0 w-full transition-all duration-300`}
     >
-      <ul className="text-gray-600 space-y-5 text-left">
+      <ul className="text-white space-y-5 text-left py-6 px-8">
         {navList.map(({ id, path, label }) => (
           <li
             key={id}
@@ -18,7 +18,7 @@ const MobileSidebar = ({ mobileSidebarOpen, navList, ActionButtons }) => {
         ))}
       </ul>
       <div className="lg:hidden justify-center mt-5">
-        {/* <ActionButtons /> */}
+    
       </div>
     </aside>
   );

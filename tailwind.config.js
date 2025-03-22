@@ -1,4 +1,5 @@
 import { AspectUITheme, colors } from "aspect-ui/AspectUITheme";
+const { Raleway, Inter } = require("next/font/google");
 
 const colorsPalette = {
 	...colors,
@@ -17,6 +18,18 @@ const colorsPalette = {
 	// },
 };
 
+const raleway = Raleway({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-raleway",
+});
+
+const inter = Inter({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	variable: "--font-inter",
+});
+
 const config = {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -28,6 +41,10 @@ const config = {
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
+			},
+			fontFamily: {
+				raleway: "var(--font-raleway)",
+				inter: "var(--font-inter)",
 			},
 		},
 	},

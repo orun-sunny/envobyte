@@ -3,6 +3,7 @@ import { useState } from "react";
 import MobileSidebar from "./MobileSidebar";
 import { NAV_LIST } from "./constant";
 import HamburgerIcon from "./HamburgerIcon";
+import Button from "./Button";
 
 const TheHeader = ({ ActionButtons, headerClasses, className = "" }) => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -12,14 +13,14 @@ const TheHeader = ({ ActionButtons, headerClasses, className = "" }) => {
       <header
         className={`shadow ${headerClasses} w-full sticky top-0 z-50 bg-[#021452]/95 backdrop-blur-2xl shadow-2xl`}
       >
-        <section className="container">
+        <section className="">
           <div
-            className={`flex w-full justify-between items-center py-4 ${className}`}
+            className={"flex w-full justify-between items-center py-6 px-12 "}
           >
             <div className="h-7 xl:h-9">
               <a href="/">
                 <img
-                  src="/Logo.png"
+                  src="/Frame 404.png"
                   alt="Logo"
                   className="size-full"
                   loading="lazy"
@@ -27,7 +28,7 @@ const TheHeader = ({ ActionButtons, headerClasses, className = "" }) => {
               </a>
             </div>
             <nav className="max-lg:hidden">
-              <ul className="flex items-center gap-6 text-gray-500 hover:*:text-primary-500">
+              <ul className="flex items-center gap-6 text-white ">
                 {NAV_LIST.map(({ id, path, label, hasDropDown = true }) => (
                   <li key={id}>
                     <a href={path ?? id} className="max-md:text-xs">
@@ -39,6 +40,11 @@ const TheHeader = ({ ActionButtons, headerClasses, className = "" }) => {
             </nav>
             {/* Render action buttons */}
             {/* <ActionButtons className="max-lg:hidden" /> */}
+            <Button
+              className={` px-10 py-[14px] bg-[#FF693B] text-white text-[14px] rounded-sm leading-[20px] text-center font-medium hidden lg:inline-block `}
+            >
+              See Pricing
+            </Button>
 
             <HamburgerIcon
               className="lg:hidden"
